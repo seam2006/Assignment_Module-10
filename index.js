@@ -24,12 +24,14 @@ let result = isOdd(15)
 console.log(result)
 
 
+
 /* 3) Write a function named findMin that takes an array of numbers and returns the smallest number in the array.*/
 
-// function findMin(){
-//     let num = [10,20,50,60,70,2]
-    
-// }
+function findMin(arr){
+    return Math.min(...arr);
+}
+let num=[45,25,10,20,4,60,54,89,78,20];
+console.log(findMin(num));
 
 
 
@@ -53,19 +55,41 @@ console.log("Even numbers:", evenNumbers)
 /* 5) Write a function named sortArrayDescending that takes an array of numbers and returns a new array sorted in descending order.*/
 
 function sortArrayDescending(){
-    let numbersarray = [10,60,80,90,45,36,17,105,658]
-    numbersarray.sort((a,b) => b-a )
-    console.log("sort Array Descending numbers are:",numbersarray)
-}
-sortArrayDescending()
+    let Numbers =[15,27,1,83,874,985,786,1250];
+     return Numbers.sort(function(a,b){
+        return b-a;
+    })
+} 
+
+let res = sortArrayDescending();
+console.log( "sor tArray Descending numbers are:",res);
 
 
 /* 6) Write a function named lowercaseFirstLetter that takes a string and returns the same string with the first letter lowercased.*/
 
-// function lowercaseFirstLetter(){
-//     let str = "Bangladesh is my favourite country."
-//     firstLetter = str.indexOf(0)
-//     console.log("first letteris:", firstLetter)
-// }
-// lowercaseFirstLetter()
+function lowercaseFirstLetter(str){
+    return str[0].toLowerCase() + str.slice(1);
+}
 
+console.log(lowercaseFirstLetter("MY COUNTRY IS BANGLADSESH"))
+
+
+/*  7) Write a function named countVowels that takes a string and returns the number of vowels (a, e, i, o, u, A, E, I, O, U) in the string. It should filter vowels from the string. */
+function countVowels(str){
+    return[...str].filter(char => "aeiouAEIOU.".includes(char)).length
+}
+console.log(countVowels("This is an example of vowel "))
+
+
+
+/*  8) Write a function named findAverage that takes an array of numbers and returns the average of all elements. */
+function findAverage(arr){
+    sum = 0;
+    for(let num of arr){
+        sum += num;
+    }
+    return sum/arr.length;
+}
+let number = [10,20,30,40,50]
+let average = findAverage(number)
+console.log(average)
