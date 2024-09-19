@@ -5,8 +5,11 @@ function calculateDifference(num1,num2){
     return num1-num2
 
 }
+
 let subtraction =  calculateDifference(50,10)
 console.log(subtraction);
+
+
 
 
 
@@ -20,8 +23,11 @@ function isOdd(number){
         return false
     }
 }
+
 let result = isOdd(15)
 console.log(result)
+
+
 
 
 
@@ -30,8 +36,11 @@ console.log(result)
 function findMin(arr){
     return Math.min(...arr);
 }
+
 let num=[45,25,10,20,4,60,54,89,78,20];
 console.log(findMin(num));
+
+
 
 
 
@@ -43,11 +52,14 @@ function filterEvenNumbers(arr){
 
     });
 }
+
 let numbers = [2,6,8,7,9,13,15,30,25,47,89,40];
 let evenNumbers = filterEvenNumbers(numbers);
 
 console.log("Original Array:", numbers)
 console.log("Even numbers:", evenNumbers)
+
+
 
 
 
@@ -65,6 +77,9 @@ let res = sortArrayDescending();
 console.log( "sor tArray Descending numbers are:",res);
 
 
+
+
+
 /* 6) Write a function named lowercaseFirstLetter that takes a string and returns the same string with the first letter lowercased.*/
 
 function lowercaseFirstLetter(str){
@@ -74,11 +89,16 @@ function lowercaseFirstLetter(str){
 console.log(lowercaseFirstLetter("MY COUNTRY IS BANGLADSESH"))
 
 
+
+
 /*  7) Write a function named countVowels that takes a string and returns the number of vowels (a, e, i, o, u, A, E, I, O, U) in the string. It should filter vowels from the string. */
 function countVowels(str){
     return[...str].filter(char => "aeiouAEIOU.".includes(char)).length
 }
+
 console.log(countVowels("This is an example of vowel "))
+
+
 
 
 
@@ -90,6 +110,7 @@ function findAverage(arr){
     }
     return sum/arr.length;
 }
+
 let number = [10,20,30,40,50]
 let average = findAverage(number)
 console.log(average)
