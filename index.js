@@ -74,7 +74,7 @@ function sortArrayDescending(){
 } 
 
 let res = sortArrayDescending();
-console.log( "sor tArray Descending numbers are:",res);
+console.log( "sort Array Descending numbers are:",res);
 
 
 
